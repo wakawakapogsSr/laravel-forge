@@ -78,7 +78,13 @@
                     @endauth
                 </div>
             @endif
-
+            <form action="/" method="post">
+                {{ csrf_field() }}
+                <input type="text" name="name">
+                <input type="text" name="email">
+                <input type="password" name="password">
+                <input type="submit" value="submit">
+            </form>
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
